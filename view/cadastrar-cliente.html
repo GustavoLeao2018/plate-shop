@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../node_modules/w3-css/3/w3.css" />
+
+        <title>Cadastro de cliente</title>
+    </head>
+    <body>
+
+        <section class="w3-container w3-padding">
+            <form action="../controller/finalizar-cliente.php" method="POST" class="w3-card">
+                <h3 class="w3-blue w3-padding w3-center">Cadastro do cliente</h3>
+                <div class="w3-panel">
+                    <label for="nome"> Nome completo: </label>
+                    <input type="text" class="w3-input" name="nome" id="nome" placeholder="Digite o nome completo" autofocus autocomplete required />
+                    
+                    <label for="telefone"> Telefone: </label>
+                    <input type="tel" class="w3-input" name="telefone" id="telefone" placeholder="Digite o telefone" autocomplete required />
+
+                    <label for="email"> Email: </label>
+                    <input type="email"  class="w3-input" name="email" id="email" placeholder="Digite o email" autocomplete required />
+
+                    <label for="senha"> Senha: </label>
+                    <input type="password" class="w3-input" name="senha" id="senha" placeholder="Digite a senha" autocomplete required />
+                
+                    <div class="w3-panel w3-right w3-padding">
+                        <input type="reset" class="w3-button w3-yellow" value="Limpar">
+                        <input type="submit" class="w3-button w3-green" value="Enviar" />
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </body>
+</html>
